@@ -1,0 +1,70 @@
+:root {
+    /* FONTS */
+    --fontInter:'Inter', sans-serif;
+    --fontLexend: 'Lexend Deca', sans-serif;
+
+    /* COLORS */
+    --mainBg: hsl(233, 47%, 7%);
+    --cardBg: hsl(244, 38%, 16%);
+    --accent: hsl(277, 64%, 61%);
+    --mainHead: hsl(0, 0%, 100%);
+    --mainPara: hsla(0, 0%, 100%, 0.75)
+}
+
+
+/*STYLES*/
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: var(--mainBg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    background-color: var(--cardBg);
+    display: flex;
+    flex-direction: column;
+}
+
+.card__image-container{
+    width: 100%;
+    background-color: var(--accent);
+}
+
+.card__image-mobile {
+    width: 100%;
+    opacity: 0.4;
+    filter: brightness(1.2) contrast(1.80);
+    
+}
+
+.card__image-desktop {
+    display: none;
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-family: var(--fontInter);
+    color: var(--mainHead);
+    font-weight: 700;
+}
+
+p {
+    font-family: var(--fontLexend);
+    color: var(--mainPara);
+    font-size: 13px;
+}
+
+/*QUERIES*/
+@media screen {
+    
+}
